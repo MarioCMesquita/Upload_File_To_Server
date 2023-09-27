@@ -40,6 +40,7 @@ Nenhum problema conhecido no momento.
 ## Notas de Lançamento
 
 - **0.0.1**: Versão inicial da extensão.
+- **0.0.3**: Ajustes na estrutura, comando de upload e pequenas correções.
 
 ## Suporte
 
