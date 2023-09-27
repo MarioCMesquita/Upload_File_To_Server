@@ -1,27 +1,24 @@
 {
-  "name": "upload-filte-to-server",
+  "name": "upload-file-to-server",
   "displayName": "Copiar comando de upload para o Servidor",
   "description": "Uma extensão para o Visual Studio Code que permite copiar comando de upload de arquivos para um servidor.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.82.0"
   },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [],
+  "categories": ["Other"],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "upload-filte-to-server.sendFileToServer",
+        "command": "upload-file-to-server.sendFileToServer",
         "title": "Copiar comando de upload"
       }
     ],
     "menus": {
       "explorer/context": [
         {
-          "command": "upload-filte-to-server.sendFileToServer",
+          "command": "upload-file-to-server.sendFileToServer",
           "group": "navigation"
         }
       ]
@@ -53,19 +50,14 @@
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "pretest": "yarn run compile && yarn run lint",
-    "lint": "eslint src --ext ts",
-    "test": "node ./out/test/runTest.js"
+    "lint": "eslint src --ext ts"
   },
   "devDependencies": {
     "@types/vscode": "^1.82.0",
-    "@types/mocha": "^10.0.1",
     "@types/node": "16.x",
     "@typescript-eslint/eslint-plugin": "^6.4.1",
     "@typescript-eslint/parser": "^6.4.1",
     "eslint": "^8.47.0",
-    "glob": "^10.3.3",
-    "mocha": "^10.2.0",
-    "typescript": "^5.1.6",
-    "@vscode/test-electron": "^2.3.4"
+    "typescript": "^5.1.6"
   }
 }

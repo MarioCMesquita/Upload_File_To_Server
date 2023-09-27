@@ -33,8 +33,8 @@ function sendFileToServer(fileUri: vscode.Uri | undefined) {
 
 // Função de ativação da extensão
 export function activate(context: vscode.ExtensionContext) {
-    // Registra o comando 'upload-filte-to-server.sendFileToServer'
-    let disposable = vscode.commands.registerCommand('upload-filte-to-server.sendFileToServer', (fileUri) => {
+    // Registra o comando 'upload-file-to-server.sendFileToServer'
+    let disposable = vscode.commands.registerCommand('upload-file-to-server.sendFileToServer', (fileUri) => {
         sendFileToServer(fileUri);
     });
 

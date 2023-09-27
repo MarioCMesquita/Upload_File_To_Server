@@ -1,71 +1,56 @@
-# upload-filte-to-server README
+# Upload File To Server
 
-This is the README for your extension "upload-filte-to-server". After writing up a brief description, we recommend including the following sections.
+## Descrição
 
-## Features
+Esta é uma extensão para o Visual Studio Code que permite copiar comandos de upload de arquivos para um servidor remoto. A extensão gera o comando necessário e preenche a área de transferência com ele, permitindo que você cole e execute o comando manualmente em seu terminal.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Recursos
 
-For example if there is an image subfolder under your extension project workspace:
+- Gere comandos de upload de arquivos para um servidor remoto.
+- Configurações personalizadas para informações do servidor.
 
-\!\[feature X\]\(images/feature-x.png\)
+## Configurações da Extensão
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Esta extensão contribui com as seguintes configurações:
 
-## Requirements
+- `uploadToServer.serverHost`: Host ou endereço IP do servidor.
+- `uploadToServer.serverUsername`: Nome de usuário para autenticação no servidor.
+- `uploadToServer.serverPath`: Caminho para onde os arquivos serão enviados no servidor.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Como Configurar
 
-## Extension Settings
+Antes de usar a extensão, siga estas etapas para configurar as informações do servidor:
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1. Abra as configurações do Visual Studio Code.
+2. Digite "uploadToServer" na barra de pesquisa.
+3. Preencha os campos `serverHost`, `serverUsername` e `serverPath` com as informações do seu servidor.
 
-For example:
+## Como Usar
 
-This extension contributes the following settings:
+1. Selecione o arquivo que deseja enviar para o servidor no Visual Studio Code.
+2. Clique com o botão direito no arquivo selecionado para abrir o menu de contexto.
+3. Selecione a opção "Copiar comando de upload" no menu.
+4. O comando de upload será gerado e copiado para a área de transferência.
+5. Cole o comando em seu terminal e execute-o manualmente.
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## Problemas Conhecidos
 
-## Known Issues
+Nenhum problema conhecido no momento.
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## Notas de Lançamento
 
-## Release Notes
+- **0.0.1**: Versão inicial da extensão.
 
-Users appreciate release notes as you update your extension.
+## Suporte
 
-### 1.0.0
+Se você encontrar problemas ou tiver sugestões de melhoria, por favor, [abra um problema](https://github.com/MarioCMesquita/Upload_File_To_Server/issues) no repositório da extensão no GitHub.
 
-Initial release of ...
+## Contribuição
 
-### 1.0.1
+Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests ou relatar problemas no [repositório da extensão](https://github.com/MarioCMesquita/Upload_File_To_Server).
 
-Fixed issue #.
+## Licença
 
-### 1.1.0
-
-Added features X, Y, and Z.
+Este projeto é disponibilizado sob a [Licença MIT](LICENSE).
 
 ---
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
