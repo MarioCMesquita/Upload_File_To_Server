@@ -41,6 +41,7 @@ Nenhum problema conhecido no momento.
 
 - **0.0.1**: Versão inicial da extensão.
 - **0.0.3**: Ajustes na estrutura, comando de upload e pequenas correções.
+- **0.0.4**: Adicionado opção para gerar o comando no contexto dos arquivos de Controle de Versão.
 
 ## Suporte
 

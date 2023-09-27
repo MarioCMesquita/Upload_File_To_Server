@@ -2,7 +2,7 @@
   "name": "upload-file-to-server",
   "displayName": "Copiar comando de upload para o Servidor",
   "description": "Uma extensão para o Visual Studio Code que permite copiar comando de upload de arquivos para um servidor.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.82.0"
   },
