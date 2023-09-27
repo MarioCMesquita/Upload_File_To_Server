@@ -21,6 +21,18 @@
           "command": "upload-file-to-server.sendFileToServer",
           "group": "navigation"
         }
+      ],
+      "scm/resourceState/context": [
+        {
+          "command": "upload-file-to-server.sendFileToServer",
+          "group": "navigation"
+        }
+      ],
+      "git/resourceState/context": [
+        {
+          "command": "upload-file-to-server.sendFileToServer",
+          "group": "navigation"
+        }
       ]
     },
     "configuration": {

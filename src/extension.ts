@@ -2,11 +2,11 @@ import * as vscode from 'vscode';
 import * as path from 'path';
 
 // Função para enviar o arquivo para o servidor
-function sendFileToServer(fileUri: vscode.Uri | undefined) {
+function sendFileToServer(fileUri: any | undefined) {
     // Verifica se um arquivo foi selecionado
     if (fileUri) {
-        // Obtém o caminho do arquivo selecionado
-        const filePath = fileUri.fsPath;
+        // Extrai o caminho do arquivo selecionado, handling different object structures
+        const filePath = typeof fileUri.fsPath === 'string' ? fileUri.fsPath : fileUri.m.fsPath;
 
         // Obter as configurações do servidor do usuário
         const serverUsername = vscode.workspace.getConfiguration('uploadToServer').get('serverUsername', '');
